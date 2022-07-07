@@ -13,7 +13,9 @@ function App() {
       <header className="App-header">
         <NavBar />
       </header>
-      <ItemListContainer />
+      <ItemListContainer
+        greeting="Hola, bienvenido a mi sitio web creado con reactJS"
+      />
     </div>
   )
 }
