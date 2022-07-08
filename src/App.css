@@ -42,3 +42,24 @@
   text-decoration: none;
   color: white;
 } */
+
+.countContainer {
+  display: flex;
+}
+
+
+.countContainer p {
+  margin: 0 20px;
+}
+
+.cardContainer {
+  width: 200px;
+}
+
+.cardContainer img {
+  width: 200px;
+}
+
+.cardInformation {
+  margin-left: 30px;
+}

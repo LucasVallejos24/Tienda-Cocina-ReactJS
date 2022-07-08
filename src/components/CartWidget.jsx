@@ -2,8 +2,8 @@ import React from "react";
 
 function CartWidget () {
     return(
-        <li class="nav-item">
-            <button type="button" class="btn btn-link "><i class='bx bx-cart fs-4'></i></button>
+        <li className="nav-item">
+            <button type="button" className="btn btn-link "><i className='bx bx-cart fs-4'></i></button>
         </li>
     );
 }
