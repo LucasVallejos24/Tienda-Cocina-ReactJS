@@ -16,16 +16,10 @@ const ItemCount = ({initial,stock}) => {
     }
 
     return(
-        <div className=" card cardContainer">
-            <img src="https://www.essen.com.ar/contenido/objetos/1/aquasarten24cm.jpg" className="card-img-top " />
-            <div className="cardInformation">
-                <h5 className="card-title">Sarten 24cm</h5>
-                <div className="countContainer">
-                    <button onClick={decrementClick}>-</button>
-                    <p>{count}</p>
-                    <button onClick={increaseClick}>+</button>
-                </div>
-            </div>
+        <div className="countContainer">
+            <button onClick={decrementClick}>-</button>
+             <p>{count}</p>
+             <button onClick={increaseClick}>+</button>
         </div>
     )
 }

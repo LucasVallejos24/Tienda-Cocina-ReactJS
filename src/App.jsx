@@ -2,7 +2,7 @@ import { useState } from 'react'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css'
 import NavBar from './components/NavBar';
-import ItemListContainer from './components/itemListContainer';
+import ItemListContainer from './components/ItemListContainer';
 
 
 function App() {
@@ -10,10 +10,14 @@ function App() {
 
   return (
     <div className="App">
+
       <header className="App-header">
         <NavBar />
       </header>
-      <ItemListContainer />
+      <main>
+        <ItemListContainer />
+      </main>
+
     </div>
   )
 }

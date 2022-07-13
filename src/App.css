@@ -43,8 +43,14 @@
   color: white;
 } */
 
+.productContainer{
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+}
+
 .countContainer {
   display: flex;
+  justify-content: center;
 }
 
 
@@ -54,10 +60,12 @@
 
 .cardContainer {
   width: 200px;
+  text-align: center;
 }
 
 .cardContainer img {
   width: 200px;
+  margin-left: 20px;
 }
 
 .cardInformation {
