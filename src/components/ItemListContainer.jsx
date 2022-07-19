@@ -1,7 +1,6 @@
-import React, {useState} from "react";
-import { products } from "../data/ProductsData";
+import React, {useState, useEffect} from "react";
 import ItemList from "../containers/ItemList"; 
-
+import products from "../data/ProductsData";
 
 let ok = true;
 
@@ -9,21 +8,14 @@ const ItemListContainer = () => {
 
     const [productsList, setProductsList] = useState([]);
 
-    const productContainer = () => {
-        return new Promise ((resolve, reject) => {
-            if(ok) {
-                setTimeout(() => {
-                    resolve(products)
-                }, 2000);
-            }else {
-                reject("ERROR")
-            }
-        })
-    }
+    useEffect(() => {
+        productContainer(2000, products)
+            .then((res) => setProductsList(res))
+            .catch((err) => {console.log(err)})
 
-    productContainer()
-        .then((res) => {setProductsList(res)})
-        .catch((err) => {console.log(err)})
+            console.log(productsList)
+    }, []);
+
 
     return(
         <>
