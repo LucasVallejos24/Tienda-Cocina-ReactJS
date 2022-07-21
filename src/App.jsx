@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import { BrowserRouter, Routes, Route} from "react-router-dom";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css'
 import NavBar from './components/NavBar';
@@ -10,17 +11,16 @@ function App() {
   const [count, setCount] = useState(0)
 
   return (
-    <div className="App">
-
-      <header className="App-header">
-        <NavBar />
-      </header>
-      <main>
-        {/* <ItemListContainer /> */}
-        <ItemDetailContainer />
-      </main>
-
-    </div>
+    <BrowserRouter>
+        <NavBar />     
+        <Routes>
+          <Route path='/' element={<ItemListContainer/>}/>
+          <Route path='/category/:categoryId' element={<ItemListContainer />} />
+          <Route path='/item/:id' element={<ItemDetailContainer/>} />
+            {/* <ItemListContainer /> */}
+            {/* <ItemDetailContainer /> */}
+        </Routes> 
+    </BrowserRouter>
   )
 }
 
