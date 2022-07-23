@@ -1,7 +1,7 @@
 import React, {useState} from "react";
 
-const ItemCount = ({initial,stock}) => {
-    const [count, setCount] = useState(initial);
+const ItemCount = ({initial=1,stock, onAdd}) => {
+    const [count, setCount] = useState(0);
 
     const increaseClick = () => {
         if(count < stock) {
@@ -16,11 +16,18 @@ const ItemCount = ({initial,stock}) => {
     }
 
     return(
-        <div className="countContainer">
-            <button onClick={decrementClick}>-</button>
-             <p>{count}</p>
-             <button onClick={increaseClick}>+</button>
-        </div>
+        <>
+            <div className="countContainer">
+                <button onClick={decrementClick}>-</button>
+                <p>{count}</p>
+                <button onClick={increaseClick}>+</button>                
+            </div>
+            {
+                stock && count
+                ?<button type="button" onClick={()=> onAdd(count)} className='detail_add btn btn-primary fs-5 '>Agregar al carrito</button>
+                :<button className="btn btn-primary" disabled>Agregar al carrito</button>
+            }
+        </>
     )
 }
 

@@ -1,7 +1,17 @@
 import React from 'react'
 import ItemCount from './ItemCount'
+import {useState} from 'react';
+import {Link} from "react-router-dom"
+
 
 const ItemDetail = ({item}) => {
+    const [itemCount, setItemCount] = useState(0);
+
+    const onAdd = (qty) => {
+        alert(`tu has seleccionado ${qty} productos.`);
+        setItemCount(qty);
+    }
+
   return (
     <>
         <div className='detail_body'>
@@ -20,8 +30,12 @@ const ItemDetail = ({item}) => {
                             <p className='detail_delivery'>Llega gratis hoy </p>
                             <p className='detail_returns'>Devolución gratis</p>
                             <div className='detail_buy'>
-                                <ItemCount initial={1} stock={item.stock} />
-                                <button type="button" className='detail_add btn btn-primary fs-5 '>Agregar al carrito</button>
+                                {
+                                    itemCount === 0
+                                    ? <ItemCount initial={itemCount} stock={item.stock} onAdd={onAdd} />
+                                    : <Link to='/cart'><button className='btn btn-primary'>Chequear carrito</button></Link>
+                                }
+                                {/* <button type="button" className='detail_add btn btn-primary fs-5 '>Agregar al carrito</button> */}
                             </div>
                         </div>
                     {/* </div> */}
