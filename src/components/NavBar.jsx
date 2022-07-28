@@ -29,9 +29,11 @@ function NavBar () {
                             </ul>
                         </div>
                         <div>
-                            <ul className="navbar-nav mb-2 mb-lg-0">
-                                <CartWidget />
-                            </ul>
+                            <Link to={"/cart"}>
+                                <ul className="navbar-nav mb-2 mb-lg-0">
+                                    <CartWidget />
+                                </ul>
+                            </Link>
                         </div>
                     </div>
                 </nav>
