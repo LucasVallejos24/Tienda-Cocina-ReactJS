@@ -1,9 +1,14 @@
 import React from "react";
+import { useContext } from 'react';
+import { CartContext } from './CartContext';
 
 function CartWidget () {
+    const test = useContext(CartContext);
+
     return(
         <li className="nav-item">
-            <button type="button" className="btn btn-link "><i className='bx bx-cart fs-4'></i></button>
+            <i className='bx bx-cart fs-4'></i>
+            <span>{test.totalProduct() || ''}</span>
         </li>
     );
 }
