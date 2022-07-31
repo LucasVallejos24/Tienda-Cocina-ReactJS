@@ -37,7 +37,10 @@ const ItemDetail = ({item}) => {
                                 {
                                     itemCount === 0
                                     ? <ItemCount initial={itemCount} stock={item.stock} onAdd={onAdd} />
-                                    : <Link to='/cart'><button className='btn btn-primary'>Chequear carrito</button></Link>
+                                    : <>
+                                    <Link to='/cart'><button className='btn btn-primary'>Chequear carrito</button></Link>
+                                    <Link to='/'><button className='btn btn-primary'>Seguir comprando</button></Link>
+                                </>
                                 }
                                 {/* <button type="button" className='detail_add btn btn-primary fs-5 '>Agregar al carrito</button> */}
                             </div>
