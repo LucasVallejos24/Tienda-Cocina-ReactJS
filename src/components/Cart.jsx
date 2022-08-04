@@ -53,7 +53,7 @@ const Cart = () => {
           }
         <tfoot>
           <tr>
-            <td><p>Total: {test.totalPrice()}</p></td>
+            <td><p>Total: ${test.totalPrice()}</p></td>
             <td></td>
             <td></td>
             <td></td>
