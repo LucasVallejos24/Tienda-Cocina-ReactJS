@@ -31,6 +31,8 @@ const ItemDetail = ({item}) => {
                             <span className='detail_sell'>Nuevo/ {item.sell} vendidos</span>
                             <h1 className='detail_title'>{item.title}</h1>
                             <span className='detail_price'>$ {item.price} </span>
+                            <br />
+                            <span className='fs-4'>Stock: {item.stock}</span>
                             <p className='detail_delivery'>Llega gratis hoy </p>
                             <p className='detail_returns'>Devolución gratis</p>
                             <div className='detail_buy'>
