@@ -25,7 +25,6 @@ function NavBar () {
                                     <span className="nav-link" href="#">Cacerolas</span>
                                     </li>      
                                 </Link>
-                                {/* <CartWidget /> */}
                             </ul>
                         </div>
                         <div>

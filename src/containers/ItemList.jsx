@@ -1,5 +1,4 @@
 import Item from "../utils/Item";
-// 
 
 const ItemList = ({Items}) => {
     return(

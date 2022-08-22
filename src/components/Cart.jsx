@@ -68,9 +68,7 @@ const Cart = () => {
 
   return (
     <>
-    {/* <div> */}
       <table className="table table-striped">
-        {/* <caption><button className='btn btn-secondary'>Vaciar carrito</button></caption> */}
         <thead>
             <tr>
               <th scope="col">#</th>
@@ -104,8 +102,6 @@ const Cart = () => {
           </tr>
         </tfoot>
       </table>
-      {/* <button></button>
-    </div> */}
     </>
   )
 }

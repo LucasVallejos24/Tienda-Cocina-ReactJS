@@ -10,45 +10,6 @@ P{
 }
 
 
-
-/* .App {
-  text-align: center;
-} */
-
-/* .App-header {
-  background-color: black ;
-  
-} */
-
-/* .NavBarContainer {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  height: 10vh;
-} */
-
-/* .LogoContainer .Logo{
-  font-size: 2rem;
-  padding-left: 20px;
-} */
-/* 
-.NavContainer {
-  width: 25vw;
-} */
-
-/* .NavContainer ul {
-  display: flex;
-  justify-content: space-around;
-  list-style-type: none;
-  font-size: 1.2rem;
-} */
-
-
-/* header a {
-  text-decoration: none;
-  color: white;
-} */
-
 .productContainer{
   display: grid;
   grid-template-columns: repeat(4, auto);
@@ -64,9 +25,7 @@ P{
   margin: 0 20px;
 }
 
-/* .countContainer button{
-  width: 0%;
-} */
+
 
 .cardContainer {
   width: 200px;
@@ -90,13 +49,6 @@ P{
 
 .detail_body{
   background-color: grey;
-  /* 
-  width: 95%;
-  height: 80vh;
-  padding: auto;
-  margin: auto;
-  margin-top: 2%;
-  display: flex; */
   height: 90vh;
   display: flex;
   justify-content: center;
@@ -114,29 +66,19 @@ P{
 
 
 .detail_img_container{
-  /* display: flex;
-  justify-content: center;
-  align-items: center;
-  padding-right:  200px; */
   margin: auto;
 }
 
 .detail_img{
-  /* background-color: rgb(0,0,0,0.3); */
   width: 40vw;
-  /* margin-left: 10vw; */
 }
 
 .detail_content_body{
-  /* display: flex; */
-  /* justify-content: center; */
   display: flex;
   justify-content: center;
 }
 
 .detail_content{
-  /* height: 400px;
-  margin: 0 20px;   */
   padding-top: 120px;
   width: 65%;
   background-color: rgb(0,0,0,0.2);
@@ -153,7 +95,6 @@ P{
 }
 .detail_returns{
   font-size: 1.2rem;
-  /* margin: 0; */
 }
 
 .detail_buy{

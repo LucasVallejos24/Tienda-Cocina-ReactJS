@@ -26,7 +26,6 @@ const ItemDetail = ({item}) => {
                     </div>
                 </div>
                 <div className='detail_content_body border '>
-                    {/* <div className='detail_content_container'>                         */}
                         <div className='detail_content border'>
                             <span className='detail_sell'>Nuevo/ {item.sell} vendidos</span>
                             <h1 className='detail_title'>{item.title}</h1>
@@ -44,10 +43,8 @@ const ItemDetail = ({item}) => {
                                     <Link to='/'><button className='btn btn-primary'>Seguir comprando</button></Link>
                                 </>
                                 }
-                                {/* <button type="button" className='detail_add btn btn-primary fs-5 '>Agregar al carrito</button> */}
                             </div>
                         </div>
-                    {/* </div> */}
                 </div>
             </div>
         </div>
